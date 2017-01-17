@@ -1,1 +1,2 @@
 # RetroCalculator
+Basic Calculator app
