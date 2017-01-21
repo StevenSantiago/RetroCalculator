@@ -36,7 +36,7 @@ class CalculatorBrain {
     func performOperation(symbol:String){ //handles calculation
         if let operation = operations[symbol] {
             switch operation {
-            // case . Constant(let value): accumulator = value
+                // case . Constant(let value): accumulator = value
             //case .UnaryOperation(let function) : accumulator = function(accumulator)
             case .BinaryOperation(let function):
                 executePendingBinaryOperartion()

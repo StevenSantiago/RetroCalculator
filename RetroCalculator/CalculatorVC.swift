@@ -40,7 +40,7 @@ class CalculatorVC: UIViewController {
         
         do {
             try btnSound = AVAudioPlayer(contentsOf: soundURL)
-            //btnSound.prepareToPlay()
+            btnSound.prepareToPlay()
         } catch let err as NSError {
             print(err.debugDescription)
         }
@@ -50,7 +50,7 @@ class CalculatorVC: UIViewController {
     
     
     @IBAction private func numberPressed(sender: UIButton) {
-        //playSound()
+        playSound()
         let digit = sender.currentTitle!
         if userInMiddleOfTyping {
             var textCurrentlyInDisplay = ""
